@@ -19,7 +19,7 @@ const Footer = () => {
             whileHover={{ scale: 1.2 }}
             onHoverStart={(e) => {}}
             onHoverEnd={(e) => {}}
-            href="https://www.linkedin.com/in/sumit-kundu-10b01d02/"
+            href="https://www.linkedin.com/in/sumit-kundu-10b01d02"
             style={styles.icon}
             target="_blank"
           >
@@ -29,7 +29,7 @@ const Footer = () => {
             whileHover={{ scale: 1.2 }}
             onHoverStart={(e) => {}}
             onHoverEnd={(e) => {}}
-            href="https://www.twitter.com"
+            href="https://x.com/sumit__Kundu"
             style={styles.icon}
             target="_blank"
           >
@@ -39,7 +39,7 @@ const Footer = () => {
             whileHover={{ scale: 1.2 }}
             onHoverStart={(e) => {}}
             onHoverEnd={(e) => {}}
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/kitkat.o.sumit"
             style={styles.icon}
             target="_blank"
           >

@@ -22,7 +22,7 @@ const Navbar = () => {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
         >
-          <FaLinkedin />
+          <a href='https://www.linkedin.com/in/sumit-kundu-10b01d02' target='_blank'><FaLinkedin /></a>
         </motion.div>
 
         <motion.div
@@ -30,7 +30,8 @@ const Navbar = () => {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
         >
-          <FaGithub />
+          <a href="https://github.com/SumitKundu102022" target='_blank'><FaGithub /></a>
+          
         </motion.div>
 
         <motion.div
@@ -38,7 +39,7 @@ const Navbar = () => {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
         >
-          <FaSquareXTwitter />
+          <a href="https://x.com/sumit__Kundu" target="_blank" ><FaSquareXTwitter /></a>
         </motion.div>
 
         <motion.div
@@ -46,7 +47,7 @@ const Navbar = () => {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
         >
-          <FaInstagram />
+          <a href='https://www.instagram.com/kitkat.o.sumit' target='_blank'><FaInstagram /></a>
         </motion.div>
       </div>
     </nav>
