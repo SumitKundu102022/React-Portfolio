@@ -4,6 +4,7 @@ import { FaNodeJs } from 'react-icons/fa';
 import { RiReactjsLine } from 'react-icons/ri'
 import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { GrMysql } from "react-icons/gr";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -83,6 +84,15 @@ const Tech = () => {
 
         <motion.div
           variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <GrMysql className="text-7xl text-blue-700" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"

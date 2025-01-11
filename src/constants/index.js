@@ -2,6 +2,8 @@ import project1 from "../assets/projects/project-0.png";
 import project2 from "../assets/projects/project-0-1.png";
 import project3 from "../assets/projects/project-0-2.png";
 import project4 from "../assets/projects/project-0-3.png";
+import project5 from "../assets/projects/project-0-4.png";
+import project6 from "../assets/projects/project-0-5.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1-2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -48,11 +50,46 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "EcoBuddy: Personalized Carbon Footprint Tracker",
+    image: project6,
+    description:
+      "EcoBuddy is a personalized carbon footprint tracker that helps users calculate their carbon footprint, track their progress, and receive actionable tips to reduce their environmental impact. The application is built using Streamlit, Pandas, and Plotly for data visualization.",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "Pandas",
+      "Plotly",
+      "numpy",
+      "MongoDB",
+    ],
+    githubLink: "https://github.com/SumitKundu102022/EcoBuddy",
+    deploymentLink:
+      "https://ecobuddy-personalized-carbon-footprint-tracker.streamlit.app",
+  },
+  {
+    title: "College Management System",
+    image: project5,
+    description:
+      "A console-based College Management System for managing student data and administrative operations. Features include inserting, updating, searching, and deleting student records, as well as handling backlogs and placements. A simple and efficient solution for educational data management.",
+    technologies: ["C++", "Data Structures", "MySQL", "Dev C++"],
+    githubLink: "https://github.com/SumitKundu102022/College_Management_System",
+    // deploymentLink:
+    //   "https://ecommerce-website-1-z9u4.onrender.com/shopping/home",
+  },
+  {
     title: "E-Commerce Website",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication and an integrated PayPal payment system for smooth and secure transactions.",
-    technologies: ["React", "Tailwind CSS","Express", "JWT", "Node.js", "MongoDB","PayPal API"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Express",
+      "JWT",
+      "Node.js",
+      "MongoDB",
+      "PayPal API",
+    ],
     githubLink: "https://github.com/SumitKundu102022/Ecommerce_website.git",
     deploymentLink:
       "https://ecommerce-website-1-z9u4.onrender.com/shopping/home",
