@@ -52,7 +52,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
-                  <button className="flex items-center mr-2 mb-0 px-2 py-1 bg-transparent  text-green-100 rounded hover:bg-green-900 text-sm font-small">
+                  <button className="flex items-center mr-2 mb-0 px-2 py-1 bg-transparent  text-pink-100 rounded hover:bg-gradient-to-r from-purple-500 to-pink-900 text-sm font-small">
                     <FaGithub className="mr-2" />
                     View on GitHub →
                   </button>
@@ -63,7 +63,7 @@ const Project = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mr-2 mb-0 px-2 py-1 bg-transparent  text-purple-100 rounded hover:bg-purple-900 text-sm font-small">
+                  <button className="mr-2 mb-0 px-2 py-1 bg-transparent  text-purple-100 rounded hover:bg-gradient-to-r from-purple-500 to-pink-900 text-sm font-small">
                     Visit Site →
                   </button>
                 </a>

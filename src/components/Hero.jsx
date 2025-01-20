@@ -55,7 +55,7 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="mt-4 px-6 py-2 bg-gradient-to-r from-pink-400 to-purple-500 text-white rounded-full text-lg font-medium hover:from-pink-500 hover:to-purple-600 hover:scale-105 transform transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-pink-400/50"
+              className="mt-4 px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-900 text-white rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-600 hover:scale-105 transform transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-pink-400/50"
             >
               Download Resume/CV ↓
             </motion.a>
