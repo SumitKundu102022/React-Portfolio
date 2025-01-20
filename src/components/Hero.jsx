@@ -45,6 +45,20 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+
+            {/* Download Resume/CV Button */}
+            <motion.a
+              href="https://drive.google.com/uc?export=download&id=1ZxGVEOGw-FY82le7WJu-56ZFpw8bq8LY"
+              target="_blank"
+              rel="noopener noreferre"
+              download
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              className="mt-4 px-6 py-2 bg-gradient-to-r from-pink-400 to-purple-500 text-white rounded-full text-lg font-medium hover:from-pink-500 hover:to-purple-600 hover:scale-105 transform transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-pink-400/50"
+            >
+              Download Resume/CV ↓
+            </motion.a>
           </div>
         </div>
 
@@ -53,7 +67,7 @@ const Hero = () => {
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: .5, delay: 1.2 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
             src={profilePic}
             alt="Sumit Kundu"
             className="object-cover rounded-lg shadow-lg max-w-[390px] sm:max-w-[370px] md:max-w-[350px] lg:max-w-[300px] xl:max-w-[350px] h-auto overflow-hidden"

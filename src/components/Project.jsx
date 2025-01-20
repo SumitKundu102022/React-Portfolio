@@ -1,4 +1,5 @@
 import { PROJECTS } from "../constants"
+import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Project = () => {
   return (
@@ -51,17 +52,19 @@ const Project = () => {
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
-                  <button className="mr-2 mb-0 px-2 py-1 bg-green-700  text-white rounded hover:bg-green-800 text-sm font-small">
-                    GitHub Repo Link
+                  <button className="flex items-center mr-2 mb-0 px-2 py-1 bg-transparent  text-green-100 rounded hover:bg-green-900 text-sm font-small">
+                    <FaGithub className="mr-2" />
+                    View on GitHub →
                   </button>
                 </a>
+
                 <a
                   href={project.deploymentLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mr-2 mb-0 px-2 py-1 bg-purple-700  text-white rounded hover:bg-purple-800 text-sm font-small">
-                    Deployment Link
+                  <button className="mr-2 mb-0 px-2 py-1 bg-transparent  text-purple-100 rounded hover:bg-purple-900 text-sm font-small">
+                    Visit Site →
                   </button>
                 </a>
               </div>
