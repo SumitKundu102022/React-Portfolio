@@ -9,6 +9,7 @@ const EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    subject: "",
     email: "",
     message: "",
   });
@@ -26,6 +27,7 @@ const ContactForm = () => {
   const validate = () => {
     let errors = {};
     if (!formData.name) errors.name = "Name is required";
+    if (!formData.subject) errors.subject = "Subject is required";
     if (!formData.email) {
       errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
@@ -62,7 +64,7 @@ const ContactForm = () => {
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
           toast.success("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" });
+          setFormData({ name: "", subject: "", email: "", message: "" });
         })
         .catch((error) => {
           console.error("FAILED...", error);
@@ -78,8 +80,8 @@ const ContactForm = () => {
     <div className="mx-auto max-w-3xl p-4" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
-              {/* Connect with Me / */}
-              Hire Me
+        {/* Connect with Me / */}
+        Hire Me
       </h2>
       <form onSubmit={handleSubmit}>
         {/* Name Input */}
@@ -93,7 +95,25 @@ const ContactForm = () => {
             placeholder="Name"
             className="mb-8 w-full appearance-none rounded-lg border border-purple-900 bg-transparent px-3 py-2 text-sm focus:border-purple-400 focus:outline-none"
           />
-          {errors.name && <p className="text-sm text-pink-400">{errors.name}</p>}
+          {errors.name && (
+            <p className="text-sm text-pink-400">{errors.name}</p>
+          )}
+        </div>
+
+        {/* Subject Input */}
+        <div className="mb-4">
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            placeholder="Subject"
+            className="mb-8 w-full appearance-none rounded-lg border border-purple-900 bg-transparent px-3 py-2 text-sm focus:border-purple-400 focus:outline-none"
+          />
+          {errors.subject && (
+            <p className="text-sm text-pink-400">{errors.subject}</p>
+          )}
         </div>
 
         {/* Email Input */}

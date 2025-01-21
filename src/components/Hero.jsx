@@ -50,12 +50,20 @@ const Hero = () => {
             <motion.a
               href="https://drive.google.com/uc?export=download&id=1ZxGVEOGw-FY82le7WJu-56ZFpw8bq8LY"
               target="_blank"
-              rel="noopener noreferre"
+              rel="noopener noreferrer"
               download
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="mt-4 px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-900 text-white rounded-full text-lg font-medium hover:from-purple-500 hover:to-pink-600 hover:scale-105 transform transition duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-pink-400/50"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 0px 20px 5px rgba(156, 39, 176, 0.8)", // Purple glow
+                background: "linear-gradient(to right, #6b46c1, #b83280)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="mt-4 px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-900 text-white rounded-full text-lg font-medium"
+              //  hover:from-purple-500 hover:to-pink-600 hover:scale-105 transform transition duration-300 ease-in-out
+              //  shadow-md hover:shadow-lg hover:shadow-pink-400/50"
             >
               Download Resume/CV ↓
             </motion.a>

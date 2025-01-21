@@ -1,6 +1,7 @@
-import { PROJECTS } from "../constants"
+import { PROJECTS } from "../constants";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+
 const Project = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -52,10 +53,18 @@ const Project = () => {
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
-                  <button className="flex items-center mr-2 mb-0 px-2 py-1 bg-transparent  text-pink-100 rounded hover:bg-gradient-to-r from-purple-500 to-pink-900 text-sm font-small">
+                  <motion.button
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0px 0px 20px 5px rgba(156, 39, 176, 0.8)", // Purple glow
+                      background: "linear-gradient(to right, #6b46c1, #b83280)",
+                    }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="flex items-center px-4 py-2 bg-transparent text-pink-100 rounded-lg text-sm font-medium border border-purple-500"
+                  >
                     <FaGithub className="mr-2" />
                     View on GitHub →
-                  </button>
+                  </motion.button>
                 </a>
 
                 <a
@@ -63,9 +72,17 @@ const Project = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mr-2 mb-0 px-2 py-1 bg-transparent  text-purple-100 rounded hover:bg-gradient-to-r from-purple-500 to-pink-900 text-sm font-small">
+                  <motion.button
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0px 0px 20px 5px rgba(128, 90, 213, 0.8)", // Purple glow
+                      background: "linear-gradient(to right, #6b46c1, #d53f8c)",
+                    }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="px-4 py-2 bg-transparent text-purple-100 rounded-lg text-sm font-medium border border-purple-500"
+                  >
                     Visit Site →
-                  </button>
+                  </motion.button>
                 </a>
               </div>
             </motion.div>
@@ -74,6 +91,6 @@ const Project = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Project
+export default Project;
