@@ -4,6 +4,8 @@ import project3 from "../assets/projects/project-0-2.png";
 import project4 from "../assets/projects/project-0-3.png";
 import project5 from "../assets/projects/project-0-4.png";
 import project6 from "../assets/projects/project-0-5.png";
+import project7 from "../assets/projects/project-0-6.png";
+import project8 from "../assets/projects/project-0-7.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1-2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -49,6 +51,42 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Job Description Analyzer",
+    image: project7, // Replace with actual image reference
+    description:
+      "Job Description Analyzer is a full-stack application that compares job descriptions against candidate resumes or CVs, highlights matched and missing skills, and calculates a skill match percentage. It supports skill categorization, feedback for accuracy improvement, and provides a clean user interface built with React and Tailwind CSS.",
+    technologies: [
+      "Python",
+      "Flask",
+      "NLTK",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "Render",
+      "Vercel"
+    ],
+    githubLink: "https://github.com/SumitKundu102022/job-description-analyzer",
+    deploymentLink: "https://job-description-analyzer.vercel.app",
+  },
+
+  {
+    title: "Air Quality Report – Power BI Dashboard",
+    image: project8, // Replace with actual image reference like an import: import project8 from '../assets/project8.png'
+    description:
+      "This Power BI Dashboard presents an analytical report on air quality data across Indian cities. It includes visual insights such as top polluted cities, AQI trends (2015–2020), pollutant breakdowns, and geographical mapping using Bing Maps. Ideal for environmental analysis, policy-making, and awareness campaigns.",
+    technologies: [
+      "Power BI Desktop",
+      "Power Query",
+      "DAX",
+      "Bing Maps"
+    ],
+    githubLink: "https://github.com/SumitKundu102022/Air-Quality-Report.git",
+    // deploymentLink: "https://sumit-kundu.vercel.app", // If hosted separately, replace with specific deployment URL
+  },
+  
+  
   {
     title: "EcoBuddy: Personalized Carbon Footprint Tracker",
     image: project6,

@@ -22,13 +22,24 @@ const Project = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={300}
-                className="mb-6 rounded cursor-pointer"
-              />
+              <a
+                href={project.deploymentLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.1 }} // Enlarge on hover
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    width={300}
+                    height={300}
+                    className="mb-6 rounded cursor-pointer"
+                  />
+                </motion.div>
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -38,14 +49,16 @@ const Project = () => {
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 mb-0 px-2 py-1 bg-neutral-900 text-purple-700 rounded text-sm font-medium cursor-pointer"
-                >
-                  {tech}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2 mb-2">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-2 py-1 bg-neutral-900 text-purple-500 rounded text-sm font-medium cursor-pointer"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
               <div className="flex justify-between mt-4">
                 <a
                   href={project.githubLink}
