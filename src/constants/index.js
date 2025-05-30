@@ -6,6 +6,8 @@ import project5 from "../assets/projects/project-0-4.png";
 import project6 from "../assets/projects/project-0-5.png";
 import project7 from "../assets/projects/project-0-6.png";
 import project8 from "../assets/projects/project-0-7.png";
+import project9 from "../assets/projects/project-0-8.png";
+import project10 from "../assets/projects/project-0-9.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1-2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -52,6 +54,49 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Disease Prediction System (MediScan)",
+    image: project10, // Replace with actual image reference like an import: import project10 from '../assets/project10.png'
+    description:
+      "MediScan is an innovative, full-stack application designed to assist in the early detection and classification of common skin diseases. Users can upload images, which are then preprocessed and analyzed by a trained machine learning model. The system provides immediate predictions with confidence scores for various skin conditions, offering a streamlined approach to preliminary diagnosis. The backend is powered by Flask and TensorFlow for robust model inference, while the frontend offers a clean, user-friendly interface.",
+    technologies: [
+      "Python",
+      "Flask",
+      "TensorFlow",
+      "Keras",
+      "Pillow (PIL)",
+      "NumPy",
+      "Gunicorn",
+      "React",
+      "TypeScript", // Updated based on your correction
+      "Tailwind CSS", // Assuming this is also used for styling like your other project
+      "Railway", // For backend deployment
+      "Vercel", // For frontend deployment
+    ],
+    githubLink:
+      "https://github.com/SumitKundu102022/my-disease-predictor-frontend", // Replace with your actual GitHub repo link
+    deploymentLink: "https://mediscanai-eight.vercel.app", // Your frontend deployment link
+  },
+  {
+    title: "Suicidal Post Detection System",
+    image: project9, // Replace with actual image reference
+    description:
+      "Suicidal Post Detection System is a machine learning–based web application designed to detect suicidal content in user-generated posts and assess mental health severity using BDI-II (Beck Depression Inventory-II) scores. It classifies text as suicidal or non-suicidal and provides depression severity levels in real-time using a clean, interactive Streamlit interface.",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Streamlit",
+      "scikit-learn",
+      "neattext",
+      "Pandas",
+      "NumPy",
+    ],
+    githubLink:
+      "https://github.com/SumitKundu102022/Final_year_project_suicidal_post_detection_system_Final",
+    deploymentLink:
+      "https://suicidal-post-detection-system-final-2025.streamlit.app/", // Replace if hosted on Streamlit or Render
+  },
+  {
     title: "Job Description Analyzer",
     image: project7, // Replace with actual image reference
     description:
@@ -65,7 +110,7 @@ export const PROJECTS = [
       "Tailwind CSS",
       "Redux",
       "Render",
-      "Vercel"
+      "Vercel",
     ],
     githubLink: "https://github.com/SumitKundu102022/job-description-analyzer",
     deploymentLink: "https://job-description-analyzer.vercel.app",
@@ -76,17 +121,11 @@ export const PROJECTS = [
     image: project8, // Replace with actual image reference like an import: import project8 from '../assets/project8.png'
     description:
       "This Power BI Dashboard presents an analytical report on air quality data across Indian cities. It includes visual insights such as top polluted cities, AQI trends (2015–2020), pollutant breakdowns, and geographical mapping using Bing Maps. Ideal for environmental analysis, policy-making, and awareness campaigns.",
-    technologies: [
-      "Power BI Desktop",
-      "Power Query",
-      "DAX",
-      "Bing Maps"
-    ],
+    technologies: ["Power BI Desktop", "Power Query", "DAX", "Bing Maps"],
     githubLink: "https://github.com/SumitKundu102022/Air-Quality-Report.git",
     // deploymentLink: "https://sumit-kundu.vercel.app", // If hosted separately, replace with specific deployment URL
   },
-  
-  
+
   {
     title: "EcoBuddy: Personalized Carbon Footprint Tracker",
     image: project6,
