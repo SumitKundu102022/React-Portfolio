@@ -3,9 +3,12 @@ import { DiRedis } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa';
 import { RiReactjsLine } from 'react-icons/ri'
 import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
+import { TbBrandCpp } from "react-icons/tb";
 import { TbBrandNextjs } from 'react-icons/tb';
 import { GrMysql } from "react-icons/gr";
 import { motion } from "framer-motion";
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -43,7 +46,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine className="text-7xl text-cyan-400" title='React' />
         </motion.div>
 
         <motion.div
@@ -52,7 +55,8 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandNextjs className="text-7xl" />
+          {/* <TbBrandNextjs className="text-7xl" /> */}
+          <TbBrandCpp className="text-7xl" title='C++'/>
         </motion.div>
 
         <motion.div
@@ -61,7 +65,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb className="text-7xl text-green-500" />
+          <SiMongodb className="text-7xl text-green-500" title='MongoDB'/>
         </motion.div>
 
         <motion.div
@@ -70,7 +74,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiExpress className="text-7xl text-gray-400" />
+          <SiExpress className="text-7xl text-gray-400" title='Express'/>
         </motion.div>
 
         <motion.div
@@ -79,7 +83,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNodeJs className="text-7xl text-green-500" />
+          <FaNodeJs className="text-7xl text-green-500" title='Node.js' />
         </motion.div>
 
         <motion.div
@@ -88,7 +92,8 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <GrMysql className="text-7xl text-blue-700" />
+          {/* <GrMysql className="text-7xl text-blue-700" /> */}
+          <TbBrandFramerMotion className="text-7xl text-rose-500"  title='Framer Motion'/>
         </motion.div>
 
         <motion.div
@@ -97,8 +102,9 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPostman className="text-7xl text-orange-500" />
+          <SiPostman className="text-7xl text-orange-500" title='Postman'/>
         </motion.div>
+        
       </motion.div>
     </div>
   );

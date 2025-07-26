@@ -8,10 +8,49 @@ import project7 from "../assets/projects/project-0-6.png";
 import project8 from "../assets/projects/project-0-7.png";
 import project9 from "../assets/projects/project-0-8.png";
 import project10 from "../assets/projects/project-0-9.png";
+import project11 from "../assets/projects/project-0-10.png";
+import collage from "../assets/education/hit-logo.png";
+import school from "../assets/education/school.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1-2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 1-2 years of professional experience, I have worked with a variety of technologies, including React, Node.js, MySQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+
+export const EDUCATIONS = [
+  {
+    year: "2021 - 2025",
+    degree: "B.Tech in Computer Science",
+    institution: "Haldia Institute of Technology",
+    logo: collage,
+    description:
+      "Focused on software engineering, data structures, full-stack development, and cloud technologies.",
+    score: { type: "CGPA", value: "8.42 / 10" },
+    subjects: ["DSA", "Web Dev", "ML", "Cloud", "DBMS"],
+    organizationLink: "https://hithaldia.ac.in/",
+  },
+  {
+    year: "2019 - 2021",
+    degree: "Higher Secondary Education",
+    institution: "GGCET St Xavier's International School",
+    logo: school,
+    description:
+      "Completed 12th with core subjects in Science stream including Computer Science.",
+    score: { type: "Percentage", value: "75.16%" },
+    subjects: ["Physics", "Math", "CS", "English"],
+    organizationLink: "https://xis.net.in/",
+  },
+  {
+    year: "2017 - 2018",
+    degree: "Secondary Education",
+    institution: "GGCET St Xavier's International School",
+    logo: school,
+    description:
+      "Completed 10th grade with a strong academic foundation in core subjects.",
+    score: { type: "Percentage", value: "84.16%" },
+    subjects: ["Math", "Science", "English", "Social Science"],
+    organizationLink: "https://xis.net.in/",
+  },
+];
 
 export const EXPERIENCES = [
  {
@@ -53,6 +92,36 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "EduTest: AI-Powered Online Assessment Platform",
+    image: project11, // Placeholder for your project image/screenshot
+    description:
+      "EduTest is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application designed for online assessments. It features dual user roles (Candidates & Admins), flexible authentication (traditional & Google Login), and AI-powered question generation from notes. It provides a secure, responsive, and intuitive UI built with React and Tailwind CSS, with smooth animations using Framer Motion.",
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Vite",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "React Router DOM",
+      "Axios",
+      "@react-oauth/google",
+      "Framer Motion",
+      "Sonner",
+      "Lucide React",
+      "JWT",
+      "Google Auth Library",
+      "bcryptjs",
+      "cookie-parser",
+      "cors",
+      "Render", // Assuming deployment to Render
+      "Vercel", // Assuming deployment to Vercel
+    ],
+    githubLink: "https://github.com/SumitKundu102022/EduTest", // Replace with your actual GitHub repo link
+    deploymentLink: "https://edu-test-live.vercel.app/", // Replace with your actual deployed app link
+  },
   {
     title: "Disease Prediction System (MediScan)",
     image: project10, // Replace with actual image reference like an import: import project10 from '../assets/project10.png'
